@@ -99,8 +99,8 @@ def vark_test():
     # st.info("Learning Style Scores:")
     plot_common_pie_chart(scores, len(responses))
     if st.button("Continue"):
-        # st.markdown("[Click here to continue](https://www.example.com)")
-        webbrowser.open_new_tab("https://mubeen161.github.io/Assessment/capacity.html")
+    st.markdown("[Click here to continue](https://mubeen161.github.io/Assessment/capacity.html)")
+
 
 def calculate_result(responses, scoring_chart):
     scores = {"Auditory": 0, "Visual": 0, "Reading": 0, "Kinesthetic": 0}
