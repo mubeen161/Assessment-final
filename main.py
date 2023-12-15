@@ -98,10 +98,8 @@ def vark_test():
     # Display Common Pie Chart for All Learning Styles
     # st.info("Learning Style Scores:")
     plot_common_pie_chart(scores, len(responses))
-    def nav_to(url):
-        js = f'window.open("{url}", "_blank").then(r => window.parent.location.href);'
-        st_javascript(js)
-
+    if st.button("Continue"):
+        webbrowser.open_new_tab("https://mubeen161.github.io/Assessment/capacity.html")
 
 def calculate_result(responses, scoring_chart):
     scores = {"Auditory": 0, "Visual": 0, "Reading": 0, "Kinesthetic": 0}
