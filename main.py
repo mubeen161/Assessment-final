@@ -1,6 +1,8 @@
 import streamlit as st
 import plotly.graph_objects as go
 import webbrowser
+import platform
+platform.system()
 def vark_test():
     # import streamlit as st
 
